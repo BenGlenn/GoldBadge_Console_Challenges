@@ -1,0 +1,6 @@
+C:\Users\ben\source\repos\Chalkkenge_One_Console\ChallengeOneRepository\bin\Debug\ChallengeOneRepository.dll
+C:\Users\ben\source\repos\Chalkkenge_One_Console\ChallengeOneRepository\bin\Debug\ChallengeOneRepository.pdb
+C:\Users\ben\source\repos\Chalkkenge_One_Console\ChallengeOneRepository\obj\Debug\ChallengeOneRepository.csprojAssemblyReference.cache
+C:\Users\ben\source\repos\Chalkkenge_One_Console\ChallengeOneRepository\obj\Debug\ChallengeOneRepository.csproj.CoreCompileInputs.cache
+C:\Users\ben\source\repos\Chalkkenge_One_Console\ChallengeOneRepository\obj\Debug\ChallengeOneRepository.dll
+C:\Users\ben\source\repos\Chalkkenge_One_Console\ChallengeOneRepository\obj\Debug\ChallengeOneRepository.pdb

@@ -1,0 +1,10 @@
+C:\Users\ben\source\repos\Chalkkenge_One_Console\MenuUserUI\bin\Debug\MenuUserUI.exe.config
+C:\Users\ben\source\repos\Chalkkenge_One_Console\MenuUserUI\bin\Debug\MenuUserUI.exe
+C:\Users\ben\source\repos\Chalkkenge_One_Console\MenuUserUI\bin\Debug\MenuUserUI.pdb
+C:\Users\ben\source\repos\Chalkkenge_One_Console\MenuUserUI\bin\Debug\ChallengeOneRepository.dll
+C:\Users\ben\source\repos\Chalkkenge_One_Console\MenuUserUI\bin\Debug\ChallengeOneRepository.pdb
+C:\Users\ben\source\repos\Chalkkenge_One_Console\MenuUserUI\obj\Debug\MenuUserUI.csprojAssemblyReference.cache
+C:\Users\ben\source\repos\Chalkkenge_One_Console\MenuUserUI\obj\Debug\MenuUserUI.csproj.CoreCompileInputs.cache
+C:\Users\ben\source\repos\Chalkkenge_One_Console\MenuUserUI\obj\Debug\MenuUserUI.csproj.CopyComplete
+C:\Users\ben\source\repos\Chalkkenge_One_Console\MenuUserUI\obj\Debug\MenuUserUI.exe
+C:\Users\ben\source\repos\Chalkkenge_One_Console\MenuUserUI\obj\Debug\MenuUserUI.pdb

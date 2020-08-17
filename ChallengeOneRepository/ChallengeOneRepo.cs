@@ -8,25 +8,25 @@ namespace ChallengeOneRepository
 {
     public class ChallengeOneRepo
     {
-        private List<MenuItems> _listMenuItems = new List<MenuItems>();
+        private List<MenuItem> _listMenuItems = new List<MenuItem>();
 
         //Create
-        public void AddNewItem(MenuItems menuItem)
+        public void AddNewItem(MenuItem menuItem)
         {
             _listMenuItems.Add(menuItem);
         }
 
         //Read
-       public List<MenuItems> SeeListOfItems()
+       public List<MenuItem> SeeListOfItems()
         {
             return _listMenuItems;
         }
 
         // Update
 
-        public bool UpdateExistingMenu(string itemId, MenuItems newItem)
+        public bool UpdateExistingMenu(string itemId, MenuItem newItem)
         {
-            MenuItems oldItem = GetItemByID(itemId);
+            MenuItem oldItem = GetItemByID(itemId);
 
             if(oldItem != null)
             {
@@ -47,7 +47,7 @@ namespace ChallengeOneRepository
 
         public bool RemoveItemFromMenu(string itemNumber)
         {
-            MenuItems item = GetItemByID(itemNumber);
+            MenuItem item = GetItemByID(itemNumber);
 
             if(item == null)
             {
@@ -57,7 +57,7 @@ namespace ChallengeOneRepository
             int initialCount = _listMenuItems.Count;
             _listMenuItems.Remove(item);
 
-            if(initialCount > _listMenuItems.Count)
+            if (initialCount > _listMenuItems.Count)
             {
                 return true;
             }
@@ -69,9 +69,9 @@ namespace ChallengeOneRepository
 
         //Helper Method 
 
-        public MenuItems GetItemByID(string itemId)
+        public MenuItem GetItemByID(string itemId)
         {
-            foreach(MenuItems item in _listMenuItems)
+            foreach(MenuItem item in _listMenuItems)
             {
                 if (item.MealNumber == itemId)
                 {
