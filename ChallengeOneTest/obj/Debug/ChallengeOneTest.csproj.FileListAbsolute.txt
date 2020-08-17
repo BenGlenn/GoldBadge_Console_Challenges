@@ -12,3 +12,8 @@ C:\Users\ben\source\repos\Chalkkenge_One_Console\ChallengeOneTest\obj\Debug\Chal
 C:\Users\ben\source\repos\Chalkkenge_One_Console\ChallengeOneTest\obj\Debug\ChallengeOneTest.csproj.CopyComplete
 C:\Users\ben\source\repos\Chalkkenge_One_Console\ChallengeOneTest\obj\Debug\ChallengeOneTest.dll
 C:\Users\ben\source\repos\Chalkkenge_One_Console\ChallengeOneTest\obj\Debug\ChallengeOneTest.pdb
+C:\Users\ben\source\repos\Chalkkenge_One_Console\ChallengeOneTest\bin\Debug\ChallengeOneRepository.dll
+C:\Users\ben\source\repos\Chalkkenge_One_Console\ChallengeOneTest\bin\Debug\MenuUserUI.exe
+C:\Users\ben\source\repos\Chalkkenge_One_Console\ChallengeOneTest\bin\Debug\ChallengeOneRepository.pdb
+C:\Users\ben\source\repos\Chalkkenge_One_Console\ChallengeOneTest\bin\Debug\MenuUserUI.pdb
+C:\Users\ben\source\repos\Chalkkenge_One_Console\ChallengeOneTest\bin\Debug\MenuUserUI.exe.config

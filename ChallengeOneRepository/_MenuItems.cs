@@ -9,7 +9,7 @@ namespace ChallengeOneRepository
     public class MenuItem
     {
         public string MealName { get; set; }
-        public string MealNumber { get; set; }
+        public string IdNumber { get; set; }
         public string Description { get; set; }
         public string Ingredients { get; set; }
         public decimal Price { get; set; }
@@ -18,7 +18,7 @@ namespace ChallengeOneRepository
         public MenuItem(string mealName, string mealID, string description, string ingredient, decimal price)
         {
             MealName = mealName;
-            MealNumber = mealID;
+            IdNumber = mealID;
             Description = description;
             Ingredients = ingredient;
             Price = price;

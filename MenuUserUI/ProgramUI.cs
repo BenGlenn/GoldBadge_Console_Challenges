@@ -94,7 +94,7 @@ namespace MenuUserUI
         {
             Console.WriteLine(
                 $"Item Name: {menuItems.MealName}\n" +
-                $"Item ID: {menuItems.MealNumber}\n" +
+                $"Item ID: {menuItems.IdNumber}\n" +
                 $"Item Description: {menuItems.Description}\n" +
                 $"Item Ingredients: {menuItems.Ingredients}\n" +
                 $"Item Price: {menuItems.Price}");
@@ -207,6 +207,9 @@ namespace MenuUserUI
             MenuItem sos = new MenuItem("S--t on a Shingle", "39", "Burnt toast with gravy on it", "Toast. Bean Gravy.", 4.99m);
 
             _menuRepo.AddNewItem(pbj);
+            _menuRepo.AddNewItem(benny);
+            _menuRepo.AddNewItem(sos);
+
 
         }
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net;
 using ChallengeOneRepository;
 using MenuUserUI;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -21,8 +22,49 @@ namespace ChallengeOneTest
             _menuItem = new MenuItem("Eggs Benny", "44", "Pure amazingness", "Love", 12.99m);
 
             _repo.AddNewItem(_menuItem);
+
         }
-            
+
+        [TestMethod]
+        public void AddNewMenuItem_ShouldBeTrue()
+        {
+            ChallengeOneRepo repo = new ChallengeOneRepo();
+            MenuItem newItem = new MenuItem("Green Bean Soup", "29", "It's Nasty... Do not order this crap!", "You really don't wanna know!", 9.99m);
+            repo.AddNewItem(newItem);
+
+            Assert.IsTrue(newItem.IdNumber == "29");
+        }
+
+      [TestMethod]
+      public void UpdateExistingMenuItem_ShouldBeTrue()
+        {
+            _repo = new ChallengeOneRepo();
+           _menuItem = new MenuItem("Green Bean Soup", "29", "It's Nasty... Do not order this crap!", "You really don't wanna know!", 9.99m);
+            _repo.AddNewItem(_menuItem);
+
+            string mealName = "Spook stew";
+            string description = "This stuff is nasty";
+            string ingredients = "Frog guts and other nasty things.";
+
+            MenuItem updatedItem = new MenuItem(mealName, "29", description, ingredients, 9.99m);
+
+            _repo.UpdateExistingMenu("29", updatedItem);
+
+            Assert.IsTrue(_menuItem.MealName == "Spook stew");
+           
+        }
+
+        [TestMethod]
+
+        public void RemoveItemFromMenu_IsTrue()
+        {
+            string idNum = _menuItem.IdNumber;
+         
+            bool removeItemNum = _repo.RemoveItemFromMenu(idNum);
+
+            Assert.IsTrue(removeItemNum);
+
+        }
             //Act
             //Assert
         

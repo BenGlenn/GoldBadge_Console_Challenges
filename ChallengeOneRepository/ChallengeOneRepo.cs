@@ -73,7 +73,7 @@ namespace ChallengeOneRepository
         {
             foreach(MenuItem item in _listMenuItems)
             {
-                if (item.MealNumber == itemId)
+                if (item.IdNumber == itemId)
                 {
                     return item;
                 }
