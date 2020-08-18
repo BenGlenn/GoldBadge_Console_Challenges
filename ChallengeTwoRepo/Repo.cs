@@ -8,24 +8,21 @@ namespace ChallengeTwoRepo
 {
     public class Repo
     {
-        private List<TheClaim> _theClaims = new List<TheClaim>();
-
-        //Create
+        private List<TheClaim> _ListOFClaims = new List<TheClaim>();
+      
         public void AddNewClaim(TheClaim content)
         {
-            _theClaims.Add(content);
+            _ListOFClaims.Add(content);
         }
 
-        //Read
-
-     public List<TheClaim> GetClaims()
+        public List<TheClaim> GetClaims()
         {
-            return _theClaims;
+            return _ListOFClaims;
         }
 
         public TheClaim GetClaimByID(double claimID)
         {
-            foreach (TheClaim item in _theClaims)
+            foreach (TheClaim item in _ListOFClaims)
             {
                 if (item.ClaimID == claimID)
                 {
@@ -55,6 +52,30 @@ namespace ChallengeTwoRepo
             }
         }
 
+        public bool RemoveClaim(double itemNumber)
+        {
+            TheClaim item = GetClaimByID(itemNumber);
 
+            if (item == null)
+            {
+                return false;
+            }
+
+            int initialCount = _ListOFClaims.Count;
+            _ListOFClaims.Remove(item);
+
+            if (initialCount > _ListOFClaims.Count)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+
+
+        
     }
 }

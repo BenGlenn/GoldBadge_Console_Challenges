@@ -103,7 +103,7 @@ namespace ChallengeTwoUI
                 $"Is the Claim Still Valid: {claimID.IsValid}");
         }
 
-        private void DisplayClaimById()
+        private double DisplayClaimById()
         {
             Console.WriteLine("Enter Item ID: ");
             double claimID = double.Parse(Console.ReadLine());
@@ -112,6 +112,7 @@ namespace ChallengeTwoUI
                 DisplayContentById(claimID);
 
             }
+            return claimID;
         }
 
         private void CreateNewClaim()
@@ -135,7 +136,6 @@ namespace ChallengeTwoUI
             TheClaim newItem = new TheClaim ();
             _claimRepo.AddNewClaim(newItem);
         }
-
 
         private bool IsClaimValid()
         {
@@ -176,9 +176,9 @@ namespace ChallengeTwoUI
             }
         }
 
-        private void UpdateExistingClaim(TheClaim claim)
+        private void UpdateExistingClaim()
         {
-            DisplayClaimById();
+            double claimID = DisplayClaimById();
 
             Console.Write("\n" +
                     "Lets update your Claim .\n" +
@@ -198,13 +198,13 @@ namespace ChallengeTwoUI
             bool isValid = IsClaimValid(); 
              
 
-                TheClaim updateItem = new TheClaim(claim.ClaimID, claimType, description, claimAmount, dateOfIncident, dateOfClaim, isValid);
-                _claimRepo.UpdateExistingClaim(claim.ClaimID, updateItem);
+                TheClaim updateItem = new TheClaim(claimID, claimType, description, claimAmount, dateOfIncident, dateOfClaim, isValid);
+                _claimRepo.UpdateExistingClaim(claimID, updateItem);
 
 
             }
 
-            private void DisplayContentById(double itemID)
+        private void DisplayContentById(double itemID)
             {
 
                 TheClaim searchResult = _claimRepo.GetClaimByID(itemID);
@@ -221,9 +221,51 @@ namespace ChallengeTwoUI
 
             }
 
-       
+        private void DeleteClaim()
+        {
+            DisplayAllClaims();
+            double claimID = DisplayClaimById();
+            Console.WriteLine("Would you like to delete this claim? Y/N");
+            string deleteYesOrNO = Console.ReadLine();
+           
+
+            if(deleteYesOrNO == "y")
+            {
+                _claimRepo.RemoveClaim(claimID);
+                Console.WriteLine("Your Claim was deleted");
+            }
+            else
+            {
+                Console.WriteLine("Your Claim could not be deleted");
+            }
+
 
 
         }
 
+        private void SeedContentList()
+        {
+            DateTime dateTimeOne = new DateTime(1998, 12, 8);
+            DateTime dateTimeTwo = new DateTime(1980, 12, 29);
+            DateTime dateTimeThree = new DateTime(2020, 11, 8);
+            DateTime dateTimeFour = new DateTime(2020, 12, 8);
+            DateTime dateTimeFive = new DateTime(2019, 10, 8);
+            DateTime dateTimeSix = new DateTime(2019, 11, 1);
+
+            TheClaim claimNumOne = new TheClaim(1, ClaimType.Car, "Car accident on gravel road", 4400, dateTimeOne, dateTimeTwo, false);
+            TheClaim claimNumTwo = new TheClaim(2, ClaimType.Home, "My She Shed Burt Down", 10, dateTimeThree, dateTimeFour, true);
+            TheClaim claimNumThree = new TheClaim(3, ClaimType.Theft, "Someone stole my DOG!", 200, dateTimeFive, dateTimeSix, true);
+
+            _claimRepo.AddNewClaim(claimNumOne);
+            _claimRepo.AddNewClaim(claimNumTwo);
+            _claimRepo.AddNewClaim(claimNumThree);
+
+        }
+
+
+
+
     }
+
+    }
+//Console.WriteLine($"\n {"ClaimID",-20}  {"Type",-30} {"Description",-30} {"Amount",-30} {"DateOfIncident",-30}{"DateOfClaim",-30} {"IsValid",-30}\n");

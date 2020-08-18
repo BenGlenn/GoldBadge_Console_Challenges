@@ -1,0 +1,10 @@
+C:\Users\ben\source\repos\Chalkkenge_One_Console\ChallengeTwoUI\bin\Debug\ChallengeTwoUI.exe.config
+C:\Users\ben\source\repos\Chalkkenge_One_Console\ChallengeTwoUI\bin\Debug\ChallengeTwoUI.exe
+C:\Users\ben\source\repos\Chalkkenge_One_Console\ChallengeTwoUI\bin\Debug\ChallengeTwoUI.pdb
+C:\Users\ben\source\repos\Chalkkenge_One_Console\ChallengeTwoUI\bin\Debug\ChallengeTwoRepo.dll
+C:\Users\ben\source\repos\Chalkkenge_One_Console\ChallengeTwoUI\bin\Debug\ChallengeTwoRepo.pdb
+C:\Users\ben\source\repos\Chalkkenge_One_Console\ChallengeTwoUI\obj\Debug\ChallengeTwoUI.csprojAssemblyReference.cache
+C:\Users\ben\source\repos\Chalkkenge_One_Console\ChallengeTwoUI\obj\Debug\ChallengeTwoUI.csproj.CoreCompileInputs.cache
+C:\Users\ben\source\repos\Chalkkenge_One_Console\ChallengeTwoUI\obj\Debug\ChallengeTwoUI.csproj.CopyComplete
+C:\Users\ben\source\repos\Chalkkenge_One_Console\ChallengeTwoUI\obj\Debug\ChallengeTwoUI.exe
+C:\Users\ben\source\repos\Chalkkenge_One_Console\ChallengeTwoUI\obj\Debug\ChallengeTwoUI.pdb

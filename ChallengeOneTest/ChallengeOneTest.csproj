@@ -60,9 +60,9 @@
       <Project>{F5460350-B7EF-4FF4-8CEA-2EDA52751576}</Project>
       <Name>ChallengeOneRepository</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MenuUserUI\MenuUserUI.csproj">
+    <ProjectReference Include="..\MenuUserUI\ChallengeOneUI.csproj">
       <Project>{7428D5FC-DF85-4C0A-82B4-5F8E15D95BCD}</Project>
-      <Name>MenuUserUI</Name>
+      <Name>ChallengeOneUI</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

@@ -7,7 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengeOneTest", "Challen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengeOneRepository", "ChallengeOneRepository\ChallengeOneRepository.csproj", "{F5460350-B7EF-4FF4-8CEA-2EDA52751576}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuUserUI", "MenuUserUI\MenuUserUI.csproj", "{7428D5FC-DF85-4C0A-82B4-5F8E15D95BCD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengeOneUI", "MenuUserUI\ChallengeOneUI.csproj", "{7428D5FC-DF85-4C0A-82B4-5F8E15D95BCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengeTwoUI", "ChallengeTwoUI\ChallengeTwoUI.csproj", "{96936AC0-959E-4427-99BA-E662189DB0E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengeTwoRepo", "ChallengeTwoRepo\ChallengeTwoRepo.csproj", "{56881C90-82F7-4D76-8A86-9B8C98BEBE57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengeTwoTest", "ChallengeTwoTest\ChallengeTwoTest.csproj", "{2284E590-4A21-44E8-9BB5-76A48709CC17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +33,18 @@ Global
 		{7428D5FC-DF85-4C0A-82B4-5F8E15D95BCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7428D5FC-DF85-4C0A-82B4-5F8E15D95BCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7428D5FC-DF85-4C0A-82B4-5F8E15D95BCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96936AC0-959E-4427-99BA-E662189DB0E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96936AC0-959E-4427-99BA-E662189DB0E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96936AC0-959E-4427-99BA-E662189DB0E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96936AC0-959E-4427-99BA-E662189DB0E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56881C90-82F7-4D76-8A86-9B8C98BEBE57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56881C90-82F7-4D76-8A86-9B8C98BEBE57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56881C90-82F7-4D76-8A86-9B8C98BEBE57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56881C90-82F7-4D76-8A86-9B8C98BEBE57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2284E590-4A21-44E8-9BB5-76A48709CC17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2284E590-4A21-44E8-9BB5-76A48709CC17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2284E590-4A21-44E8-9BB5-76A48709CC17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2284E590-4A21-44E8-9BB5-76A48709CC17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
