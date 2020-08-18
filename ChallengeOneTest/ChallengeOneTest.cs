@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Net;
 using ChallengeOneRepository;
 using MenuUserUI;
@@ -65,8 +66,30 @@ namespace ChallengeOneTest
             Assert.IsTrue(removeItemNum);
 
         }
-            //Act
-            //Assert
+
+        [TestMethod]
+
+        public void GetMenuItemById()
+        {
+
+            MenuItem findItem = _repo.GetItemByID("44");
+
+            Assert.AreEqual(findItem.MealName, "Eggs Benny");
+            
+           
+        }
+
+        [TestMethod]
+
+        public void DisplayMenuItem_IsTrue()
+        {
+            List<MenuItem> seeTheList = _repo.SeeListOfItems();
+
+            bool seeTheListHasID = seeTheList.Contains(_menuItem);
+
+            Assert.IsTrue(seeTheListHasID);
+        }
+            
         
     }
 }
