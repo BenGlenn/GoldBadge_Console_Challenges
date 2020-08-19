@@ -3,3 +3,4 @@ C:\Users\ben\source\repos\Chalkkenge_One_Console\ChallengeTwoRepo\bin\Debug\Chal
 C:\Users\ben\source\repos\Chalkkenge_One_Console\ChallengeTwoRepo\obj\Debug\ChallengeTwoRepo.csproj.CoreCompileInputs.cache
 C:\Users\ben\source\repos\Chalkkenge_One_Console\ChallengeTwoRepo\obj\Debug\ChallengeTwoRepo.dll
 C:\Users\ben\source\repos\Chalkkenge_One_Console\ChallengeTwoRepo\obj\Debug\ChallengeTwoRepo.pdb
+C:\Users\ben\source\repos\Chalkkenge_One_Console\ChallengeTwoRepo\obj\Debug\ChallengeTwoRepo.csprojAssemblyReference.cache
