@@ -34,7 +34,9 @@ namespace ChallengeTwoUI
         {
             Console.Clear();
             Console.Write(
-                 "\t\tKOMODO CLAIMS DEPARTMENT\n" +
+                 "\n" +
+                 "\n" +
+                 "\t\t\t\tKOMODO CLAIMS DEPARTMENT\n" +
                  "\n" +
                           "\t\tWhat would you like to do? Choose a number from the items bellow:\n" +
                           "\n" +
@@ -57,7 +59,7 @@ namespace ChallengeTwoUI
             switch (userInput)
             {
                 case "1":
-                    Console.WriteLine($"\n {"ClaimID",-10}  {"Type",-10} {"Description",-30} {"Amount",-10} {"DateOfIncident",-25}{"DateOfClaim",-25} {"IsValid",-20}\n");
+                    Console.WriteLine($"\n {"Claim ID",-10}  {"Type",-10} {"Description",-30} {"Amount",-10} {"Date of Incident",-25}{"Date of Claim",-25} {"Is Valid",-20}\n");
                     DisplayAllClaims();
                     Console.WriteLine("\n" +
                         "\nSelect the claim ID of the claim you would like to work with.");
@@ -335,4 +337,3 @@ namespace ChallengeTwoUI
     }
 
 }
-//Console.WriteLine($"\n {"ClaimID",-20}  {"Type",-30} {"Description",-30} {"Amount",-30} {"DateOfIncident",-30}{"DateOfClaim",-30} {"IsValid",-30}\n");
