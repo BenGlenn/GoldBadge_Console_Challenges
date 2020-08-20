@@ -7,24 +7,43 @@ using System.Threading.Tasks;
 namespace ChallengeThreeRepo
 {
     public class Repo
+
     {
-        private List<Badge> _badge = new List<Badge>();
+        // Add New ID
+        public List<IdBadge> _idBadge = new List<IdBadge>();
 
-        public void AddNewBadge(Badge content)
+        public void AddNewBadgeId(IdBadge badgeID)
         {
-            _badge.Add(content);
+            _idBadge.Add(badgeID);
         }
 
-        public List<Badge> GetBadge()
+        // Add New Door
+        public List<BadgeAccess> _badgeAccesses = new List<BadgeAccess>();
+
+        public void AddNewBadgeAccess(BadgeAccess doors)
         {
-            return _badge;
+            _badgeAccesses.Add(doors);
         }
 
-        public Badge GetTheBadgeByID(int badgeID)
+        //See all Badges
+
+        public Dictionary<IdBadge, BadgeAccess> _badgeDic = new Dictionary<IdBadge, BadgeAccess>();
+
+        public void AddToDictioany(IdBadge idBadge, BadgeAccess door)
         {
-            foreach(Badge item in _badge)
+            _badgeDic.Add(idBadge, door);
+        }
+
+        public Dictionary<IdBadge, BadgeAccess> SeeAllBadges()
+        {
+            return _badgeDic;
+        }
+        //Get Badge by ID
+        public IdBadge GetByBadgeID(int badgeID)
+        {
+            foreach (IdBadge item in _idBadge)
             {
-                if(item.BadgeID == badgeID)
+                if (item.BadgeID == badgeID)
                 {
                     return item;
                 }
@@ -32,42 +51,25 @@ namespace ChallengeThreeRepo
             return null;
         }
 
-        public bool UpdateBadge(int badgeID, Badge updatedBadge)
-        {
-            Badge oldBadge = GetTheBadgeByID(badgeID);
 
-            if (oldBadge != null)
-            {
-                oldBadge.DoorName = updatedBadge.DoorName;
-                oldBadge.NameBadge = updatedBadge.NameBadge;
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
 
-        public bool RemoveBadge(int badgeID)
-        {
-            Badge badgeToRemove = GetTheBadgeByID(badgeID);
 
-            if (badgeToRemove == null)
-            {
-                return false;
-            }
 
-            int initialCount = _badge.Count;
-            _badge.Remove(badgeToRemove);
+        //public bool UpdateBadge(int badgeID, Badge updatedBadge)
+        //{
+        //    Badge oldBadge = GetTheBadgeByID(badgeID);
 
-            if (initialCount > _badge.Count)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
+        //    if (oldBadge != null)
+        //    {
+        //        oldBadge.DoorName = updatedBadge.DoorName;
+        //        oldBadge.NameBadge = updatedBadge.NameBadge;
+        //        return true;
+        //    }
+        //    else
+        //    {
+        //        return false;
+        //    }
+        //}
+
     }
 }
