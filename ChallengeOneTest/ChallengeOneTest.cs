@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Net;
 using ChallengeOneRepository;
-using MenuUserUI;
+using ChalkkengOneUI;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace ChallengeOneTest

@@ -6,7 +6,7 @@ using System.Runtime.Remoting.Services;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MenuUserUI
+namespace ChalkkengOneUI
 {
     public class ProgramUI
     {
