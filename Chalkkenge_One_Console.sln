@@ -15,8 +15,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengeTwoRepo", "Challen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengeTwoTest", "ChallengeTwoTest\ChallengeTwoTest.csproj", "{2284E590-4A21-44E8-9BB5-76A48709CC17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BennyTrials", "BennyTrials\BennyTrials.csproj", "{CC82834B-B8E7-4586-9677-C49BDB700A93}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengeThreeUI", "ChallengeThreeUI\ChallengeThreeUI.csproj", "{19D643E2-9FA2-4538-8E44-1E5B1B4ACEF0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengeThreeRepo", "ChallengeThreeRepo\ChallengeThreeRepo.csproj", "{DA2914BD-02BE-4519-ABFD-D63079D9EFC1}"
@@ -53,10 +51,6 @@ Global
 		{2284E590-4A21-44E8-9BB5-76A48709CC17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2284E590-4A21-44E8-9BB5-76A48709CC17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2284E590-4A21-44E8-9BB5-76A48709CC17}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CC82834B-B8E7-4586-9677-C49BDB700A93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CC82834B-B8E7-4586-9677-C49BDB700A93}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CC82834B-B8E7-4586-9677-C49BDB700A93}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CC82834B-B8E7-4586-9677-C49BDB700A93}.Release|Any CPU.Build.0 = Release|Any CPU
 		{19D643E2-9FA2-4538-8E44-1E5B1B4ACEF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{19D643E2-9FA2-4538-8E44-1E5B1B4ACEF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19D643E2-9FA2-4538-8E44-1E5B1B4ACEF0}.Release|Any CPU.ActiveCfg = Release|Any CPU

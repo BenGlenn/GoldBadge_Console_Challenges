@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,67 +10,79 @@ namespace ChallengeThreeRepo
     public class Repo
 
     {
-        // Add New ID
-        public List<IdBadge> _idBadge = new List<IdBadge>();
-
-        public void AddNewBadgeId(IdBadge badgeID)
-        {
-            _idBadge.Add(badgeID);
-        }
-
-        // Add New Door
-        public List<BadgeAccess> _badgeAccesses = new List<BadgeAccess>();
-
-        public void AddNewBadgeAccess(BadgeAccess doors)
-        {
-            _badgeAccesses.Add(doors);
-        }
-
-        //See all Badges
+        //Working Methods vv
 
         public Dictionary<IdBadge, BadgeAccess> _badgeDic = new Dictionary<IdBadge, BadgeAccess>();
 
-        public void AddToDictioany(IdBadge idBadge, BadgeAccess door)
-        {
-            _badgeDic.Add(idBadge, door);
-        }
+        public List<IdBadge> _idBadges = new List<IdBadge>();
 
         public Dictionary<IdBadge, BadgeAccess> SeeAllBadges()
         {
             return _badgeDic;
         }
-        //Get Badge by ID
-        public IdBadge GetByBadgeID(int badgeID)
+
+        //AddToDictionary method's sole purpose is to add a new badge to the dictionary, you will add the doors to the BadgeAccess prior to adding the KeyValuePair to the dictionary.
+        public void AddToDictionary(IdBadge idBadge, BadgeAccess door)
         {
-            foreach (IdBadge item in _idBadge)
+            _badgeDic.Add(idBadge, door);
+        }
+
+        public IdBadge SingleBadgeByID(int idbadge)
+        {
+            foreach (IdBadge singleIdBadge in _idBadges)
             {
-                if (item.BadgeID == badgeID)
-                {
-                    return item;
-                }
+                if (singleIdBadge.BadgeID == idbadge)
+                    return singleIdBadge;
             }
             return null;
         }
 
 
+        public Dictionary<IdBadge, BadgeAccess> GetSingleBadge()
+        {
+            return _badgeDic;
+        }
 
-
-
-        //public bool UpdateBadge(int badgeID, Badge updatedBadge)
+        //WHY DOES THIS NOT WORK!!!?????????
+        //public bool RemoveDoorFromExistingBadge(int oldbadgeID, string accessCode)
         //{
-        //    Badge oldBadge = GetTheBadgeByID(badgeID);
+        //    List<string> existingAccess;
 
-        //    if (oldBadge != null)
+        //    if (_badgeDic.TryGetValue(oldbadgeID out existingAccess))
         //    {
-        //        oldBadge.DoorName = updatedBadge.DoorName;
-        //        oldBadge.NameBadge = updatedBadge.NameBadge;
-        //        return true;
-        //    }
-        //    else
-        //    {
-        //        return false;
-        //    }
+        //        if (existingAccess.Contains(accessCode))
+        //            existingAccess.Remove(accessCode);
+
+        //public bool DeleteBadge(idBadge)
+        //{
+        //    return _idBadges.Remove(idBadge);
         //}
 
+
+
+        public bool RemoveBadge(int itemNumber)
+        {
+            IdBadge item = SingleBadgeByID(itemNumber);
+          
+            if (item == null)
+            {
+                return false;
+            }
+
+            int initialCount = _idBadges.Count;
+            _idBadges.Remove(item);
+
+            if (initialCount > _idBadges.Count)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
+
+      
     }
 }

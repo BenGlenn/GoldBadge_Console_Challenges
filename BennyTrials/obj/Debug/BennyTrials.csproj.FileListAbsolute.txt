@@ -1,7 +1,0 @@
-C:\Users\ben\source\repos\Chalkkenge_One_Console\BennyTrials\bin\Debug\BennyTrials.exe.config
-C:\Users\ben\source\repos\Chalkkenge_One_Console\BennyTrials\bin\Debug\BennyTrials.exe
-C:\Users\ben\source\repos\Chalkkenge_One_Console\BennyTrials\bin\Debug\BennyTrials.pdb
-C:\Users\ben\source\repos\Chalkkenge_One_Console\BennyTrials\obj\Debug\BennyTrials.csprojAssemblyReference.cache
-C:\Users\ben\source\repos\Chalkkenge_One_Console\BennyTrials\obj\Debug\BennyTrials.csproj.CoreCompileInputs.cache
-C:\Users\ben\source\repos\Chalkkenge_One_Console\BennyTrials\obj\Debug\BennyTrials.exe
-C:\Users\ben\source\repos\Chalkkenge_One_Console\BennyTrials\obj\Debug\BennyTrials.pdb
